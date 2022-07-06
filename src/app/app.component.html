@@ -1,0 +1,8 @@
+<h1>Priyanka</h1>
+
+<plotly-plot [data]="graph1.data" [layout]="graph1.layout"></plotly-plot>
+
+<select name="props" [ngModel]="selectedDevice" (ngModelChange)="onChange($event)">
+  <option *ngFor="let factor of factors" [value]="factor.id">{{factor.name}}</option>
+</select>
+
